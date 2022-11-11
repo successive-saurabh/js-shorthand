@@ -1,6 +1,7 @@
+// ---------------------- LONGHAND ----------------------
 function foo(bar) {
   if (bar === undefined) {
-      throw new Error(`Missing parameter`)
+    throw new Error(`Missing parameter!`);
   }
   console.log('foo function param ::', bar);
   return bar;
@@ -8,7 +9,6 @@ function foo(bar) {
 // foo();
 
 // ---------------------- SHORTHAND ----------------------
-
 const mandatory = (str) => {
   throw new Error(`${str} missing parameter`)
 }
@@ -18,4 +18,4 @@ const boo = (bar = mandatory('bar')) => {
   return bar;
 }
 
-// boo('bar')
+boo('bar');

@@ -4,4 +4,4 @@ const a = "100";
 console.log("long hand====",parseInt(a, 10));
 
 // short hand 
-console.log("long hand====",+a);
+console.log("short hand====",+a);
